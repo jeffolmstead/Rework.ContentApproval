@@ -1,0 +1,9 @@
+﻿@model ApprovalRequestViewModel
+
+<style asp-src="~/Rework.ContentApproval/Styles/content-approval.min.css" debug-src="~/Rework.ContentApproval/Styles/content-approval.css"></style>
+
+<div class="btn-group btn-group-approval">
+    <span class="status">Status: @Model.Status</span>
+    <input asp-for="Notes" type="text" class="form-control content-preview-select" placeholder="Note (optional)" />
+    <button class="btn btn-success btn-content-approval" type="submit" name="submit.Save" value="submit.RequestApproval">@T["Request Approval"]</button>
+</div>

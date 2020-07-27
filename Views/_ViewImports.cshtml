@@ -1,0 +1,13 @@
+﻿@inherits OrchardCore.DisplayManagement.Razor.RazorPage<TModel>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, OrchardCore.DisplayManagement
+@addTagHelper *, OrchardCore.ResourceManagement
+@addTagHelper *, OrchardCore.Contents
+
+@using Rework.ContentApproval.Common;
+@using Rework.ContentApproval.Models;
+@using Rework.ContentApproval.ViewModels;
+@using Rework.ContentApproval.Workflows.ViewModels;
+@using OrchardCore.ContentManagement;
+@using OrchardCore.DisplayManagement.Views;
+@using OrchardCore.Workflows.Helpers
