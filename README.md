@@ -19,3 +19,7 @@ These are often used to send out email notifications to the alternate party in t
 
 ## Index Support
 In addition, there is an index that is managed as part of this module called "Content Approval Part Index". This could be used in generating lists via the query module. 
+
+### Notes
+* Users without "Publish" permissions and with "Request content approval" in their role will not see the "Publish" button when creating a content item.
+* When a Content Item has been requested for approval by a User, and that user attempts to edit the Content Item, the Save Draft button, and "Request Approval" button will not appear until that Content Item is Approved, Rejected, or marked as "Needs Revised."
