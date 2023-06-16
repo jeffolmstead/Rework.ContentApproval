@@ -4,6 +4,7 @@ using OrchardCore.Data.Migration;
 using Rework.ContentApproval.Common;
 using Rework.ContentApproval.Indexes;
 using Rework.ContentApproval.Models;
+using YesSql.Sql;
 
 namespace Rework.ContentApproval
 {
@@ -22,7 +23,7 @@ namespace Rework.ContentApproval
                 .Attachable()
                 .WithDescription($"Adds the ability for users with '{Settings.RequestContentApprovalPermission}' permission to initiate a request for approval."));
 
-            SchemaBuilder.CreateMapIndexTable(nameof(ContentApprovalPartIndex), table => table
+            SchemaBuilder.CreateMapIndexTable<ContentApprovalPartIndex>(table => table
                 .Column<string>(nameof(ContentApprovalPartIndex.Status))
             );
 

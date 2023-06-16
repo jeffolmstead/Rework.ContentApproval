@@ -14,6 +14,7 @@ namespace Rework.ContentApproval.Indexes
         public override void Describe(DescribeContext<ContentItem> context)
         {
             context.For<ContentApprovalPartIndex>()
+                .When(c => c.Has<ContentApprovalPart>())
                 .Map(contentItem =>
                 {
                     var contentApprovalPart = contentItem.As<ContentApprovalPart>();

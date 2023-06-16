@@ -4,19 +4,21 @@
 */
 
 .btn-content-approval {
-  white-space: nowrap; }
+  white-space: nowrap;
+}
 
 .btn-group-approval {
   border: 1px solid lightgray;
   padding: 3px;
-  border-radius: 4px; }
-  .btn-group-approval .status {
-    width: 100%;
-    min-width: 200px;
-    line-height: 38px;
-    margin-left: 6px; }
-  .btn-group-approval .dropdown-menu {
-    left: auto !important;
-    right: 0px !important; }
-  .btn-group-approval .nnnn {
-    color: red; }
+  border-radius: 4px;
+}
+.btn-group-approval .status {
+  width: 100%;
+  min-width: 200px;
+  line-height: 38px;
+  margin-left: 6px;
+}
+.btn-group-approval .dropdown-menu {
+  left: auto !important;
+  right: 0px !important;
+}
